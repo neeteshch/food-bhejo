@@ -1,0 +1,29 @@
+.availablemeals{
+    width: 60%;
+    margin: auto;
+    margin-top: 1rem;;
+}
+
+.items{
+    list-style: none;
+    border-bottom: 0.5px dotted grey;   
+    width:90%; 
+}
+
+.items .h3{
+    margin: 0 0 0.25rem 0;
+}
+
+.items .itembox{
+    display:flex;
+    flex-direction:column;
+}
+
+.items .description{
+    font-style: italic;
+}
+
+.price{
+    color: #cc0000;
+    font-weight: bold;
+}
