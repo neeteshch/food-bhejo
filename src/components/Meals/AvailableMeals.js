@@ -1,4 +1,5 @@
 import Card from '../UI/Card';
+import AddMeals from'./AddMeals';
 
 import classes from './AvailableMeals.module.css';
 const Dummy_Meals = [
@@ -30,12 +31,15 @@ const Dummy_Meals = [
 
 const AvailableMeals = (props) =>{
 const menuItems = Dummy_Meals.map(meal => 
-            <li className={classes.items}>
-                <div className={classes.itembox}>
+            <li className={classes.items}>  
+             <div className={classes.itembox}>
                     <h3 >{meal.name}</h3>
                     <span className={classes.description}>{meal.description}</span>
-                    <span className={classes.price}>${meal.price}</span>
-                </div>
+                    <span className={classes.price}>${meal.price}</span>                    
+                </div>  
+                <div>
+                <AddMeals/>  
+                </div>             
             </li>
 );
     return(
@@ -43,7 +47,7 @@ const menuItems = Dummy_Meals.map(meal =>
         <Card>
             <ul>
                     {menuItems}
-        </ul>
+            </ul>
         </Card>
         </section>        
     )
